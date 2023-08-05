@@ -95,18 +95,18 @@ a{
 }
 
 .faded-text{
-    position:absolute;
-    user-select:none;
-    font-size: 6em;
-    color:rgb(231,231,231);
-    width:100%;
-    bottom: -15%;
-    left: 20px;
-    font-weight: bold;
-    transition: all 3s;
-    height: auto;
-    
+  font-size:100px;
+  position: absolute;
+  bottom:-30px;
+  left:5px;
+  color:rgb(231,231,231);
 }
+.small_spaces{
+  width:100%;
+  height:100px
+}
+
+
 
 .hero-section-left{
     width:100%;
@@ -410,12 +410,23 @@ a{
     right:10%;
   }
 
-  .project-skills-container{
-    width:60%;
+  .skills-container{
+    width:80%;
     display:flex;
+    flex-direction: row;
     gap:10px;
-    flex-wrap:wrap;
+    align-items: center;
+    margin: auto;
+   
   
+  }
+  
+  .skill-container-left{
+    width:auto;
+  }
+  
+  .skills-faded-text{
+    font-size: 100px;
   }
 
   .project-skill{
@@ -475,6 +486,37 @@ a{
     margin-left:120px;
     background-image: url(./images/projects/Project4.png);
   }
+
+  .contactus-form-container{
+    width:100%;
+   
+  }
+
+  .contactus-form-container .container{
+    width:100%;
+    padding: 10px;
+  }
+
+  #submit-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submit-icon{
+    width:25px;
+  }
+  .link-wrapper{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+    gap:10px;
+  }
+
+
 
   @media (max-width:1220px) {
     .logo-container{
@@ -560,8 +602,8 @@ a{
   .skills-container{
     position:relative;
     display:flex;
-    padding:5rem;
-    margin:10rem auto;
+    padding:2rem;
+    margin:auto;
     gap:30px;
   }
 
@@ -578,18 +620,12 @@ a{
   position:relative;
   gap:2rem;
   justify-content: center;
+  padding-left: 20px;
+  margin: auto;
+
 }
 
-.skill-fade-text{
-  position:absolute;
-  font-size:15em;
-  font-style:bold;
-  color:rgb(231,231,231);
-  bottom:-34.5%;
-  right:-25%;
-  user-select:none;
-  overflow-y:hidden;
-}
+
 
 .blob-style{
   position:absolute;
@@ -617,24 +653,36 @@ a{
 }
 
 .skill-heading{
-  font-size:50px;
+  font-size:40px;
   font-style: bold;
   color: var(--bgOrange);
   line-height: 50px;
+  
+  margin:auto;
+  
+  
 }
 
 .caps{
+  
+  
   font-size:90px;
 }
 
 .skill-subHeading{
-  margin-top: 1rem;
-  width:85%;
-  text-align: justify;
+  margin-top: 0.9rem;
+  width:100%;
+  text-align:center;
 }
 
 .skill-subHeading p{
   margin:15px 0;
+}
+
+.skills-faded-text{
+  margin-left: 20px;
+  font-size: 100px;
+  color:rgb(231,231,231); ;
 }
 
 .contactus-form-container{
@@ -643,20 +691,21 @@ a{
 }
 
 .contactus-heading{
-  font-size:5em;
+  font-size:4em;
   color:var(--bgOrange);
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .contactus-sub-heading{
-  font-size:3rem;
+  font-size:2rem;
   color:#343d68aa;
   text-transform: capitalize;
 }
 
 .contactus-form-container{
-  margin-top:25px;
+  
   display:flex;
+  
   align-items: center;
   justify-content: center;
 }
@@ -664,13 +713,15 @@ a{
 .form{
   display:flex;
   flex-direction: column;
+  align-items: center;
   gap:30px;
   width:70%;
-  margin: 2rem 5rem;
+  margin: 2rem auto;
 }
 
 .formfield-container{
   width:100%;
+  padding-right:35px;
 }
 
 .formfield{
@@ -710,14 +761,20 @@ footer{
   margin-top:-1px;
   background-color: #343d68;
   padding:5rem;
+  position: relative;
+  
 }
-
+.container{
+  width:100%;
+}
 .footer-wrapper{
   display:flex;
-  gap:1rem;
-  padding:1.2rem;
+  
+  
   justify-content: space-between;
   align-items:center;
+  width:90%;
+  margin: auto;
 }
 
 .footer-faded-text{
@@ -783,7 +840,54 @@ footer{
    transform: scale(0.8);
     bottom: -7%;
   }
+  .skills-container{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .skill-container-left{
+    text-align: center;
+  }
+   .skill-heading{
+    transform: scale(0.7);
+    margin: auto;
+   
+  }
 
+  
+  .skill-container-right
+  {
+    transform: scale(0.7);
+  }
+
+  
+
+  .skill-container-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width:100%;
+
+  }
+
+ 
+
+  .contactus-heading{
+    font-size: 50px;
+  }
+  .contactus-sub-heading{
+    font-size: 20px;
+  }
+
+  .formfield-container{
+    padding-right: 45px;
+  }
+
+  .footer-wrapper{
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap:50px;
+  }
 
 }
 
@@ -820,7 +924,29 @@ footer{
   .page-header{
     font-size: x-large;
   }
+  .skill-container-left{
+    width: 100%;
+  }
 
+  .skill-container-right{
+    padding-left: 5px;
+  }
+  .skill-heading{
+    margin: auto;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+
+  .skills-faded-text{
+    font-size: 66px;
+  }
+  .formfield-container{
+    padding-right: 55px;
+  }
+  .footer-faded-text{
+   font-size: 66px;
+  }
   
 
 }
@@ -836,24 +962,87 @@ footer{
   }
 
   #project1 .project-content{
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
+
+  .skill-container-right{
+    transform: scale(0.6);
+  }
+
+  .contactus-heading{
+    font-size: 40px;
+  }
+  .contactus-sub-heading{
+    font-size: 15px;
+  }
+
+  #submit-btn{
+   font-size: medium;
+  }
+
+  .footer-faded-text{
+    font-size: 60px;
+   }
+
+   
+
+   .footer-wrapper{
+    transform: scale(0.8);
+    position: absolute;
+    top:10px;
+    right:8px;
+
+   }
+
+   
 
 }
 @media screen and (max-width:372px){
   
 
+  .project-card{
+    position: relative;
+  }
+
+  .project-content .btn-grp .btn-pink{
+    
+   width:240px;
+
+  }
   .project-content .btn-grp{
     
-    display: flex;
-    flex-direction: column;
+    width:230px;
+ 
+   }
 
+ 
+
+
+
+  .skill-container-right{
+    transform: scale(0.5);
   }
 
-  #project1 .project-content{
-  margin-bottom: 70px;
+  .contactus-heading{
+    font-size: 30px;
+  }
+  .contactus-sub-heading{
+    font-size: 12px;
   }
 
+  #submit-btn{
+   
+    transform: scale(0.7);
+    font-size: medium;
+    padding: 10%;
+    width:250px;
+    
+  }
+  .footer-faded-text{
+    font-size: 50px;
+   }
+    
+  
 }
 @media screen and (max-width:326px){
   .nav-items div a{
@@ -865,4 +1054,6 @@ footer{
   #project1 .project-content{
     margin-bottom: 120px;
     }
+
+    
 }
