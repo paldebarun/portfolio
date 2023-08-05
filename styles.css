@@ -193,6 +193,8 @@ a{
     z-index:-9;
   }
 
+
+
   @keyframes scaleImage {
 
     0%{
@@ -515,8 +517,14 @@ a{
     
     gap:10px;
   }
+  
+  #burger-button{
+    visibility: hidden;
+  }
+  
 
-
+  
+ 
 
   @media (max-width:1220px) {
     .logo-container{
@@ -805,6 +813,8 @@ footer{
   gap:1rem;
 }
 
+
+
 @media screen and (max-width:903px){
 
   .nav-items{
@@ -888,6 +898,21 @@ footer{
     align-items: flex-start;
     gap:50px;
   }
+  
+
+  .inactive{
+    display:none;
+  }
+
+  
+  #burger-button{
+    visibility: visible;
+    margin-right:50px;
+    transform: scale(1.5);
+  }
+   .inactive{
+    display:none;
+  } 
 
 }
 
