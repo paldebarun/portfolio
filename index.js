@@ -68,15 +68,16 @@ async function submitHandler(event){
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-
+   
+    window.location.reload();
     
-    console.log('Response from API:', response);
 
 
-  } catch (error) {
+  }
+   catch (error) {
     console.error('Error sending the API request:', error);
    
   }
-
+  
 }
   
