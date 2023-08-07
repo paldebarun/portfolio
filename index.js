@@ -69,9 +69,10 @@ async function submitHandler(event){
       throw new Error('Network response was not ok');
     }
    
-    setTimeout(() => {
+    setTimeout(() => {console.log("yes reloaded");
       window.location.reload();
-    }, 1000);
+      
+    }, 1);
     
 
 
