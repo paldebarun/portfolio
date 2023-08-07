@@ -274,35 +274,35 @@
 
 
             <div class="contactus-form-container">
-              <form class="form" action="">
-                <div class="formfield-container">
+              <form class="form"  onsubmit="submitHandler(event)" >
+                <div class="formfield-container" >
                   <input class="formfield" 
                   type="text" 
                   name="name" 
-                  id="" 
+                  id="nameInput" 
                   placeholder="Enter your name" />
 
                   <input class="formfield" 
                   type="email" 
                   name="email" 
-                  id="" 
+                  id="emailInput" 
                   placeholder="Enter your email address" />
 
                   <input class="formfield" 
                   type="text" 
                   name="subject" 
-                  id="" 
+                  id="subjectInput" 
                   placeholder="Enter your subject" />
 
                   <textarea name="message" 
-                  id="" cols="30" rows="10" 
+                  id="messageInput" cols="30" rows="10" 
                   class="formfield formfield-textarea"
                   placeholder="Enter your message"></textarea>
 
                 </div>
                 
                 <div>
-                  <button type="submit" class="btn-pink" id="submit-btn">
+                  <button  type="submit"  class="btn-pink" id="submit-btn">
                     Send Message<i class="submit-icon "><img src="./images/userAsset/icons8-paper-plane-16.png"  alt=""></i>
                   </button>
                 </div>
