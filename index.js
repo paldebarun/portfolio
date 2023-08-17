@@ -57,7 +57,7 @@ async function submitHandler(event){
   
 
   try {
-    const response = await fetch('http://localhost:4000/api/v1/submitfeedback', {
+    const response = await fetch('https://portfolio-debarun.onrender.com/api/v1/submitfeedback', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
